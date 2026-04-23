@@ -8,15 +8,15 @@ history = []
 
 
 class Telemetry(BaseModel):
-    temps: float
-    alt: float
-    temp: float
-    press: float
     lat: float
     lon: float
-    rssi: float
-    servoX: int
-    servoY: int
+    alt: float
+    vel: float
+    temp: float
+    press: float
+    alt_press: float
+    temps_txt: str
+    temps: float
 
 
 @app.get("/")
